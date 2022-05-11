@@ -17,6 +17,12 @@ jobs:
       - name: Soluation1
         run: |
           python bSpider.py 6 4 BV1734y117nR
+          for i in `find ./main/ -size +100M`;do 
+          git lfs track $i ;
+          git add $i;
+          git commit -m "update{{1}}" -a
+          git push
+          done 
           git add main context.json pic.png
           du -ah
       - name: Commit and Push 1
@@ -26,6 +32,12 @@ jobs:
       - name: Soluation2
         run: |
           python bSpider.py 6 5 BV1734y117nR
+          for i in `find ./main/ -size +100M`;do 
+          git lfs track $i ;
+          git add $i;
+          git commit -m "update{{1}}" -a
+          git push
+          done 
           git add main context.json pic.png
       - name: Commit and Push 2
         run: |
