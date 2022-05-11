@@ -14,16 +14,6 @@ jobs:
           git config --global user.email xxx.com
           git config --global user.name robot
 
-      - name: Soluation1
-        run: |
-          python bSpider.py 2 1 BV1734y117nR
-          git add main context.json pic.png
-      - name: Commit and Push 1
-        run: |
-          git commit -m "update1" -a
-          git push
-    
-
       - name: Soluation2
         run: |
           python bSpider.py 2 2 BV1734y117nR
