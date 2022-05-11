@@ -16,15 +16,16 @@ jobs:
 
       - name: Soluation1
         run: |
-          python bSpider.py 4 3 BV1734y117nR
+          python bSpider.py 6 4 BV1734y117nR
           git add main context.json pic.png
+          du -ah
       - name: Commit and Push 1
         run: |
           git commit -m "update1" -a
           git push
       - name: Soluation2
         run: |
-          python bSpider.py 4 4 BV1734y117nR
+          python bSpider.py 6 5 BV1734y117nR
           git add main context.json pic.png
       - name: Commit and Push 2
         run: |
