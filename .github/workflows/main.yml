@@ -18,7 +18,7 @@ jobs:
         run: |
           python bSpider.py 6 4 BV1734y117nR
           for i in `find ./main/ -size +100M`;do 
-          git lfs track $i ;
+          git lfs track "$i" ;
           git add $i;
           git commit -m "update{{1}}" -a
           git push
@@ -33,7 +33,7 @@ jobs:
         run: |
           python bSpider.py 6 5 BV1734y117nR
           for i in `find ./main/ -size +100M`;do 
-          git lfs track $i ;
+          git lfs track "$i" ;
           git add $i;
           git commit -m "update{{1}}" -a
           git push
