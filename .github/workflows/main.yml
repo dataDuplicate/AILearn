@@ -20,7 +20,7 @@ jobs:
           find ./main/ -size +100M | while read i;
           do 
           git lfs track "$i" ;
-          git add $i;
+          git add "$i";
           git commit -m "update{{1}}" -a
           git push
           done 
@@ -36,7 +36,7 @@ jobs:
           find ./main/ -size +100M |while read i;
           do 
           git lfs track "$i" ;
-          git add $i;
+          git add "$i";
           git commit -m "update{{1}}" -a
           git push
           done 
